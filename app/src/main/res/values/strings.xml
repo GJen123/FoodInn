@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">FoodInn</string>
+
+    <!--  activity_login.xml  -->
+    <string name="text_account">帳號 : </string>
+    <string name="text_password">密碼 : </string>
+    <string name="text_enter">登入</string>
+    <string name="text_cancel">取消</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_classification">Classification</string>
+    <string name="title_random">Random</string>
+    <string name="title_map">Map</string>
+    <string name="title_account">Account</string>
+
+
+</resources>
