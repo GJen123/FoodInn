@@ -49,7 +49,7 @@ public class ShopArrayAdapter extends ArrayAdapter<Shop> {
 
 
         viewHolder.tvShopName.setText(shop.getName());
-        viewHolder.tvShopTel.setText(shop.getTel());
+        viewHolder.tvShopTel.setText(shop.getPhone());
 //        viewHolder.tvShopTime.setText(shop.getTime());
 
         return convertView;

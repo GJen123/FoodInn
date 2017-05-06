@@ -24,7 +24,8 @@
                 android:layout_height="wrap_content"
                 app:srcCompat="@mipmap/ic_launcher"
                 android:background="@color/white"
-                android:id="@+id/imageButton4" />
+                android:onClick="onBtnTogether"
+                android:id="@+id/imageButton" />
 
             <TextView
                 android:text="朋友聚會"
@@ -49,7 +50,8 @@
                 android:layout_height="wrap_content"
                 app:srcCompat="@mipmap/ic_launcher"
                 android:background="@color/white"
-                android:id="@+id/imageButton5" />
+                android:onClick="onBtnConvenient"
+                android:id="@+id/imageButton2" />
 
             <TextView
                 android:text="便當"
@@ -74,7 +76,8 @@
                 android:layout_height="wrap_content"
                 app:srcCompat="@mipmap/ic_launcher"
                 android:background="@color/white"
-                android:id="@+id/imageButton6" />
+                android:onClick="onBtnSupper"
+                android:id="@+id/imageButton3" />
 
             <TextView
                 android:text="宵夜"
@@ -103,8 +106,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@mipmap/ic_launcher"
-                android:id="@+id/imageButton"
+                android:id="@+id/imageButton4"
                 android:background="@color/white"
+                android:onClick="onBtnNightMarket"
                 android:layout_weight="1" />
 
             <TextView
@@ -131,8 +135,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@mipmap/ic_launcher"
-                android:id="@+id/imageButton2"
+                android:id="@+id/imageButton5"
                 android:background="@color/white"
+                android:onClick="onBtnDrink"
                 android:layout_weight="1" />
 
             <TextView
@@ -158,12 +163,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:srcCompat="@mipmap/ic_launcher"
-                android:id="@+id/imageButton3"
+                android:id="@+id/imageButton6"
                 android:background="@color/white"
+                android:onClick="onBtnShopMap"
                 android:layout_weight="1" />
 
             <TextView
-                android:text="早餐"
+                android:text="特約商店地圖"
                 android:textAlignment="center"
                 android:textSize="@dimen/text_bigsize"
                 android:layout_width="match_parent"

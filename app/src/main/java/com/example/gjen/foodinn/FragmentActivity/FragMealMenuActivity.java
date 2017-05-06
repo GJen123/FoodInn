@@ -41,9 +41,9 @@ public class FragMealMenuActivity extends Fragment {
 
     void getBundle(){
         Bundle bundle = getArguments();
-        shop.setImgURL(bundle.getString("shopImgUrl"));
+        shop.setphotoUrl(bundle.getString("shopImgUrl"));
         shop.setName(bundle.getString("shopName"));
-        shop.setTel(bundle.getString("shopTel"));
+        shop.setPhone(bundle.getString("shopTel"));
         shop.setOpenTime(bundle.getString("shopOpenTime"));
         shop.setIntro(bundle.getString("shopIntro"));
         shop.setemail(bundle.getString("shopEmail"));

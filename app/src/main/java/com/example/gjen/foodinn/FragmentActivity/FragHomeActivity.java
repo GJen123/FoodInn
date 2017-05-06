@@ -119,7 +119,7 @@ public class FragHomeActivity extends Fragment {
                     Shop shop = new Shop();
 //                    shop.setImg(loadImageFromURL(shop.getImgURL()));
                     shop.setName(((JSONObject) jsonObis.get(i)).getString("shopName"));
-                    shop.setTel(((JSONObject) jsonObis.get(i)).getString("phone"));
+                    shop.setPhone(((JSONObject) jsonObis.get(i)).getString("phone"));
                     shopList.add(shop);
                     handler1.post(runnable2);
                 }

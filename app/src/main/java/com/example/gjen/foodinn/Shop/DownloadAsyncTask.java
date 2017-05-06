@@ -77,9 +77,9 @@ public class DownloadAsyncTask extends AsyncTask<String, Void, List<Shop>> {
                 for (int i = 0; i < jsonObis.length(); i++) {
                     JSONObject jsonObject = jsonObis.getJSONObject(i);
                     Shop shop = new Shop();
-                    shop.setImgURL(jsonObject.getString("photo"));
+                    shop.setphotoUrl(jsonObject.getString("photo"));
                     shop.setName(jsonObject.getString("shopName"));
-                    shop.setTel(jsonObject.getString("phone"));
+                    shop.setPhone(jsonObject.getString("phone"));
                     shop.setemail(jsonObject.getString("email"));
                     shop.setIntro(jsonObject.getString("intro"));
                     if(jsonObject.has("openTime")){

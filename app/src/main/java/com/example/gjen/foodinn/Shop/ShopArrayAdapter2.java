@@ -13,6 +13,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.ViewFlipper;
@@ -94,10 +96,10 @@ public class ShopArrayAdapter2 extends ArrayAdapter<Shop> {
 
             myTag.ivShopPic.setImageResource(R.drawable.coffee);
 
-            showImageByAsyncTask(myTag.ivShopPic, shop.getImgURL());
+            showImageByAsyncTask(myTag.ivShopPic, shop.getphotoUrl());
 
             myTag.tvShopName.setText(shop.getName());
-            myTag.tvShopPhone.setText(shop.getTel());
+            myTag.tvShopPhone.setText(shop.getPhone());
             myTag.tvShopTime.setText(shop.getOpenTime());
 
             return convertView;
@@ -141,5 +143,4 @@ public class ShopArrayAdapter2 extends ArrayAdapter<Shop> {
         params.height = evenHight;
         imgid.setLayoutParams(params);
     }
-
 }

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\GJen\AndroidStudioProjects\FoodInn\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="17db230f1a601e2bd93f6db3b08d9c8b2b219094">
+        <dex dex="C:\Users\GJen\AndroidStudioProjects\FoodInn\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_9ba66d8eac4dae89e87f59509ddcb7775b3304ba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\GJen\.android\build-cache\a3c5a485df7efe6c4b65b5a92f9932d6b24ca9f7\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="c7626a9aa507bbbdc16188bc9a9f9bf3370c1ddd">
+        <dex dex="C:\Users\GJen\AndroidStudioProjects\FoodInn\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fbfccf3994afa2391ef4b8639fda7b8ee240d2fa\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\GJen\AndroidStudioProjects\FoodInn\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="510aa6efc159983dfbffa676a0dae37568c0a46f">
+        <dex dex="C:\Users\GJen\AndroidStudioProjects\FoodInn\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_b65cb2c5ca8450f00c7031d614989411836894b9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\GJen\.android\build-cache\fc794e7baeae28639e912d6cbc37a37b6975a4c7\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="19696dc358ac668e341f28c41e3387d61ccdb81d">
+        <dex dex="C:\Users\GJen\AndroidStudioProjects\FoodInn\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_2d36c3daa6a70821e5bc7b930e49fecef6cf9f14\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\GJen\.android\build-cache\a8219631825e19b243fbe314c01e1728ade11e9c\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="6003d64df88a6ce5e961fa2bad7f1b9b97689ac1">
+        <dex dex="C:\Users\GJen\AndroidStudioProjects\FoodInn\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_fa982c2f411843b8ed2ff28fe0ce8fdd2f0146c2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\GJen\.android\build-cache\046819830f0ea0a5e9233fc4ed847d90ba5d4df9\output\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="bdcc2a9572f18b8c90a3a157cab6cdfc97c6c736">
+        <dex dex="C:\Users\GJen\AndroidStudioProjects\FoodInn\app\build\intermediates\transforms\dex\debug\folders\1000\10\classes_1060c24aeecb93804e5a4fb5ec1810a41a6e2e39\classes.dex" />
+    </item>
+
+</items>

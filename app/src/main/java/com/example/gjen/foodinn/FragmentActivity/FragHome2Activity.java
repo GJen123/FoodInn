@@ -106,10 +106,10 @@ public class FragHome2Activity extends Fragment{
                     }else{
                         Shop shop = new Shop();
                         JSONObject jsonObject = jsonObis.getJSONObject(i-2);
-                        shop.setImgURL(jsonObject.getString("photo"));
-                        shop.setImg(loadImageFromURL(shop.getImgURL()));
+                        shop.setphotoUrl(jsonObject.getString("photo"));
+                        shop.setPhoto(loadImageFromURL(shop.getphotoUrl()));
                         shop.setName(jsonObject.getString("shopName"));
-                        shop.setTel(jsonObject.getString("phone"));
+                        shop.setPhone(jsonObject.getString("phone"));
                         shopList.add(shop);
                     }
                 }

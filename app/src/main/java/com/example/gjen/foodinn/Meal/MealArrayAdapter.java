@@ -56,10 +56,10 @@ public class MealArrayAdapter extends ArrayAdapter<Meal> {
             fTag.tvShopOpenTime = (TextView)convertView.findViewById(R.id.textView17);
             fTag.tvShopIntro = (TextView)convertView.findViewById(R.id.textView18);
 
-            showImageByAsyncTask(fTag.ivShopPic, shop.getImgURL());
+            showImageByAsyncTask(fTag.ivShopPic, shop.getphotoUrl());
 
             fTag.tvShopName.setText(shop.getName());
-            fTag.tvShopTel.setText(shop.getTel());
+            fTag.tvShopTel.setText(shop.getPhone());
             fTag.tvShopOpenTime.setText(shop.getOpenTime());
             fTag.tvShopIntro.setText(shop.getIntro());
         }else{

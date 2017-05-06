@@ -46,9 +46,9 @@ public class FragHome3Activity extends Fragment {
                 if(position == 0 || position == 1){
 
                 }else{
-                    String shopImgUrl = shops.get(position).getImgURL();
+                    String shopImgUrl = shops.get(position).getphotoUrl();
                     String shopName = shops.get(position).getName();
-                    String shopTel = shops.get(position).getTel();
+                    String shopTel = shops.get(position).getPhone();
                     String shopOpenTime = shops.get(position).getOpenTime();
                     String shopIntro = shops.get(position).getIntro();
                     String shopEmail = shops.get(position).getemail();
@@ -64,6 +64,7 @@ public class FragHome3Activity extends Fragment {
                     FragMealMenuActivity fragMealMenuActivity = new FragMealMenuActivity();
                     FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
                     fragMealMenuActivity.setArguments(bundle);
+                    ft.addToBackStack(FragHome3Activity.class.getName());
                     ft.replace(R.id.content, fragMealMenuActivity);
                     ft.commit();
                 }
