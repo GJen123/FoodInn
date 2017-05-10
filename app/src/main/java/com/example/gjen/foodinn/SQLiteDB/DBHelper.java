@@ -20,11 +20,16 @@ public class DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-//        if(oldVersion==1){
-//            if(newVersion==2){
+        if(oldVersion==1){
+            if(newVersion==2){
 //                String SQL="ALTER TABLE "+ShopUtil.TABLE_NAME+ " ADD COLUMN CellPhone;";
 //                db.execSQL(SQL);
-//            }
-//        }
+            }
+        }
+    }
+
+    @Override
+    public void onDowngrade(SQLiteDatabase db, int oldVersion, int newVersion) {
+        super.onDowngrade(db, oldVersion, newVersion);
     }
 }

@@ -17,6 +17,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.example.gjen.foodinn.R;
+import com.example.gjen.foodinn.Shop.Shop;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
@@ -26,6 +27,16 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.List;
+
 public class FragMapActivity extends Fragment {
 
     MapView mMapView;
@@ -33,6 +44,8 @@ public class FragMapActivity extends Fragment {
     View view;
 
     LocationManager locationManager;
+
+    private static final String SERVICE_URL = "http://140.134.26.71:58080/android-backend/webapi/shop/list";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -82,23 +95,18 @@ public class FragMapActivity extends Fragment {
                 }
                 googleMap.setMyLocationEnabled(true);
 
-//                // For dropping a marker at a point on the Map
-//                LatLng sydney = new LatLng(-34, 151);
-//                googleMap.addMarker(new MarkerOptions().position(sydney).title("Marker Title").snippet("Marker Description"));
-//
-//                // For zooming automatically to the location of the marker
-//                CameraPosition cameraPosition = new CameraPosition.Builder().target(sydney).zoom(12).build();
-//                googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+                // For dropping a marker at a point on the Map
+                LatLng sydney = new LatLng(24.178816, 120.6445163);
+
+                // For zooming automatically to the location of the marker
+                CameraPosition cameraPosition = new CameraPosition.Builder().target(sydney).zoom(15).build();
+                googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+
+
             }
         });
 
         return view;
-    }
-
-    @Override
-    public void onActivityCreated(Bundle savedInstanceState) {
-        super.onActivityCreated(savedInstanceState);
-
     }
 
     void findviews() {
@@ -202,8 +210,8 @@ public class FragMapActivity extends Fragment {
                 location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
             }
         }
-        if (location != null)
+        if (location != null){
             drawMarker(location);
+        }
     }
-
 }

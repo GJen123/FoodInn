@@ -65,6 +65,9 @@ public class ShopAsyncToDB extends AsyncTask<String, Void, List<Shop>> {
             JSONArray jsonObis = new JSONArray(jsonString);
             if (jsonObis.length() > 0) {
                 for (int i = 0; i < jsonObis.length(); i++) {
+                    if(i==10){
+                        break;
+                    }
                     JSONObject jsonObject = jsonObis.getJSONObject(i);
                     Shop shop = new Shop();
                     shop.setId(jsonObject.getInt("ID"));
@@ -104,7 +107,7 @@ public class ShopAsyncToDB extends AsyncTask<String, Void, List<Shop>> {
             values.put("photoUrl", shop.getphotoUrl());
             values.put("name", shop.getName());
             db.insert(ShopUtil.TABLE_NAME, null, values);
-            Log.i("abc", "db insert success");
+            Log.i("abc", "db " + shop.getName() + " insert success");
         }
     }
 }

@@ -118,29 +118,4 @@ public class ShopArrayAdapter2 extends ArrayAdapter<Shop> {
     class FirstTag{
         ViewFlipper vf;
     }
-
-    private Matrix getMatrix(Bitmap bmp){
-        //轉換為圖片指定大小
-        //獲得圖片的寬高
-        int width = bmp.getWidth();
-        int height = bmp.getHeight();
-        // 設置想要的大小
-        int newWidth = bmp.getWidth();
-        int newHeight = 1000;
-        // 計算缩放比例
-        float scaleWidth = ((float) newWidth) / width;
-        float scaleHeight = ((float) newHeight) / height;
-        // 取得想要缩放的matrix參數
-        Matrix matrix = new Matrix();
-        matrix.postScale(scaleWidth, scaleHeight);
-        return matrix;
-    }
-
-    private void myimageviewsize(ImageView imgid, int evenWidth, int evenHight) {
-        // TODO 自動產生的方法 Stub
-        ViewGroup.LayoutParams params = imgid.getLayoutParams();  //需import android.view.ViewGroup.LayoutParams;
-        params.width = evenWidth;
-        params.height = evenHight;
-        imgid.setLayoutParams(params);
-    }
 }
